@@ -1,0 +1,90 @@
+body {
+    display: grid;
+    text-align: left;
+    height: 100vh;
+    overflow-x: hidden;
+    background: #fff;
+    color: #202124;
+    cursor: auto;
+    font-family: 'Courier', sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: auto;
+    padding: 0;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 8vh auto 200px 200px 10vh;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "substory1 substory2 substory3"
+        "all all all"
+        "footer footer footer"
+}
+
+#main-brand
+h3,
+h4 {
+    font-family: "Montserrat", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+#navbar {
+    grid-area: header;
+    display: inline-block;
+    padding: 0 0 4.5rem;
+}
+
+.nav-list {
+    position: absolute;
+    list-style-type: none;
+    text-align: right;
+}
+
+#featured-article {
+        grid-area: main;
+}
+.main-brand {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.big-heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.card {
+    width: 18rem;
+    background: grey;
+    margin: auto;
+    width: 100px
+}
+.substory1 {
+    grid-area: substory1;
+}
+
+.substory2 {
+    grid-area: substory2;
+}
+
+.substory3 {
+    grid-area: substory3;
+}
+.nav-list {
+
+}
+#section3 {
+    grid-area: all;
+}
+
+#footer {
+    grid-area: footer;
+    text-align: center;
+}
