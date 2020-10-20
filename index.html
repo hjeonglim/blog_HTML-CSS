@@ -8,6 +8,9 @@
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="./css/styles.css">
 
+    <!-- favicon -->
+    <link rel="icon" href="./css/images/fav_logo.png" type="image/gif" sizes="16x16">
+
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/492fc7ca3a.js" crossorigin="anonymous"></script>
 
@@ -16,72 +19,88 @@
 </head>
 
 <body>
-    <!-- navigation -->
-    <div id="navbar">
-        <p><a class="main-brand" href="/">BECOMING</a></p>
-        <ul class="nav-list">
-            <li class="nav-item"><a href="#">MAKER</a></li>
-            <li class="nav-item"><a href="#">MOTHER</a></li>
-            <li class="nav-item"><a href="#">CONTACT</a></li>
-            <li class="nav-item"><a href="#">SUBSCRIBE</a></li>
-            <li class="nav-item"><a href="#">ABOUT</a></li>
-        </ul>
-    </div>
 
+    <div class="container">
+        <!-- navigation -->
+        <nav class="main-nav">
+            <img src="./css/images/logo.png" alt="BECOMING" class="logo">
 
+                <ul class="main-nav">
+                    <li><a href="#">MAKER</a></li>
+                    <li><a href="#">MOTHER</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">SUBSCRIBE</a></li>
+                </ul>
+
+            <ul class="right-menu">
+                <li>
+                    <a href="">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
     <!-- main stories-->
-    <section id="featured-article">
-        <a href="#" class="featured-article_link">
-            <img src="#" alt="" />
-            <h2 class="featured-article_title">main story</h2>
-            <p class="featured-article_summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </a>
-    </section>
-    <hr>
 
-    <!-- sub story cards -->
-    <section id="section2">
-        <div class="card substory1">
-            <h3>class="category"></h3>
-            <a href="#">
-                <img src="#" class="card-img-top" alt="#">
-                <div class="card-body">
-                <h4 class="sub-heading">This is the title</h4>
+        <div id="featured-article">
+            <img class="main-img" src="./css/images/macbook.jpg" alt="macbook" copyright="Markus Spiske on unSplash">
+
+            <div class="featured-article_title">
+                <h3 >MAKER</h3>
+                <h2>My journey to become a maker</h2>
+                <p class="featured-article_summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <a href="#" class="read-more">READ ARTICLE</a>
+                </p>
+
             </div>
-            </a>
         </div>
 
-        <div class="card substory2">
-            <h3 class="category"></h3>
+
+
+    <!-- sub story cards -->
+    <!-- <section>
+        <div id="substories">
+        <div>
+            <h3 class="category" a href="">MOTHER</h3>
             <a href="#">
-                <img src="#" class="card-img-top" alt="#">
-                <div class="card-body">
                 <h4 class="sub-heading">This is the title</h4>
-            </div>
+                <img src="#" class="card-img-top" alt="#">
+            </a>
+        </div>
+        <div class="card substory2">
+            <h3 class="category" a href="">MAKER</h3>
+            <a href="#">
+                <div class="card-body">
+                    <h4 class="sub-heading">This is the title</h4>
+                    <img src="#" class="card-img-top" alt="#">
+                </div>
             </a>
         </div>
 
         <div class="card substory3">
-            <h3 class="category"></h3>
+            <h3 class="category" a href="">MOTHER</h3>
             <a href="#">
-                <img src="#" class="card-img-top" alt="#">
                 <div class="card-body">
-                <h4 class="sub-heading">This is the title</h4>
+                    <h4 class="sub-heading">This is the title</h4>
+                    <img src="#" class="card-img-top" alt="#">
             </div>
             </a>
         </div>
+    </div>
+</div>
 
-    </section>
-    <hr>
+    </section> -->
+
     <!-- all stories -->
-    <section id="section3">
+    <!-- <section id="section3">
         <div></div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <footer id="footer" class="white-section">
+    <!-- <footer id="footer" class="white-section">
         <div class="container-fluid">
             <i class="social-icon fab fa-twitter"></i>
             <i class="social-icon fab fa-facebook-f"></i>
@@ -89,7 +108,9 @@
             <i class="social-icon fas fa-envelope"></i>
             <p>© Copyright 2020 Hannah Lim</p>
         </div>
-    </footer>
+    </footer> -->
+
+
 </body>
 
 </html>
