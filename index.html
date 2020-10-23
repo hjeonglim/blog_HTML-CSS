@@ -17,21 +17,19 @@
     <script src="https://kit.fontawesome.com/492fc7ca3a.js" crossorigin="anonymous"></script>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,800&family=Sacramento&family=Special+Elite&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
-            <!-- <img src="./css/images/logo.png" alt="BECOMING" class="logo"> -->
+        <!-- heading: title & logo -->
+        <nav class="heading">
+            <img src="./css/images/logo.png" alt="BECOMING" class="logo">
             <h1 class="title-heading">Hannah's Story</h1>
-                <!-- navigation -->
+        </nav>
+        <!-- navigation -->
         <nav class="nav-bar">
-
-            <div>
-                <i class="fas fa-bars"></i>
-            </div>
-
             <ul class="nav-list">
                 <li><a class="home" href="#">HOME</a></li>
                 <li><a href="#">MAKER</a></li>
@@ -40,33 +38,41 @@
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">SUBSCRIBE</a></li>
             </ul>
+
+            <div>
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+
         </nav>
     </header>
 
         <!-- main stories-->
+        <container class="quote_container">
+        <blockquote class="quotes" cite="https://www.goalcast.com/2016/07/22/top-12-most-inspiring-steve-jobs-quotes/">
+            <p>Have the courage to follow your heart and intuition. They somehow already know what you truly want to <span class="org-become">become</span>. Everything else is secondary.</p>
+            <cite>- Steve Jobs</cite>
+        </blockquote>
+        </container>
+
     <main  id="feature">
         <img class="main-img" src="./css/images/macbook.jpg" alt="macbook" copyright="Markus Spiske on unSplash">
         <div class="featured-article">
-            <h3 class="category">MAKER</h3>
+            <h2 class="category">MAKER</h2>
             <div class="main-content">
                     <h1 class="title">My journey to become a maker</h1>
-                    <p class="featured_summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris
-                        nisi ut aliquip ex ea commodo consequat.
+                    <p class="featured_summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ea commodo consequat.
                     </p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="#" class="read-more">Read More </a>
             </div>
         </div>
     </main>
 
         <!-- sub story cards -->
     <section id="substories">
-        <div class="container">
-
             <div class="substory sub1">
                 <h3 class="category" a href="">MOTHER</h3>
                 <a href="#">
-                    <h1 class="sub-title">This is the title</h1>
+                    <h2 class="sub-title">This is the title</h2>
                     <img src="#" class="card-img-top" alt="#">
                 </a>
             </div>
@@ -74,7 +80,7 @@
                 <h3 class="category" a href="">MAKER</h3>
                 <a href="#">
                     <div class="card-body">
-                        <h1 class="sub-title">This is the title</h4>
+                        <h2 class="sub-title">This is the title</h2>
                         <img src="#" class="card-img-top" alt="#">
                     </div>
                 </a>
@@ -84,23 +90,23 @@
                 <h3 class="category" a href="">MOTHER</h3>
                 <a href="#">
                     <div class="card-body">
-                        <h1 class="sub-title">This is the title</h4>
+                        <h2 class="sub-title">This is the title</h2>
                         <img src="#" class="card-img-top" alt="#">
                     </div>
                 </a>
             </div>
-        </div>
+    
     </section>
         <!-- Footer -->
 
     <footer>
-        <div class="container-fluid">
-            <i class="social-icon fab fa-twitter"></i>
-            <i class="social-icon fab fa-facebook-f"></i>
-            <i class="social-icon fab fa-instagram"></i>
-            <i class="social-icon fas fa-envelope"></i>
-            <p>© Copyright 2020 Hannah Lim</p>
-        </div>
+        <div id="contact">
+           <a class="social" href="https://www.linkedin.com/in/hannah-heejeong-lim-00464619/"><i class="fab fa-linkedin fa-2x fab1"></i></a>
+           <a class="social" href="https://github.com/hjeonglim"<i class="fab fa-github fa-2x"></i></a>
+           <a class="social" href="mailto:hjeong.lim@gmail.com" <i class="social-icon fas fa-envelope"></i></a>
+           <p class="copyright">© 2020 Hannah Lim.</p>
+   </div>
+
     </footer>
 
 </body>
