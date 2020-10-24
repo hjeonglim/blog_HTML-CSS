@@ -17,7 +17,7 @@ body {
     color: #223745;
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-gap: 20px;
+    grid-gap: 30px;
     grid-template-areas:
         "header header header"
         "quotes quotes quotes"
@@ -56,10 +56,6 @@ h1 {
     color: #8CBDB9;
     padding-bottom: 30px;
 }
-
-
-
-
 
 /* heading: title & logo */
 
@@ -113,7 +109,10 @@ header .logo {
     color: #E09E50;
 }
 
-.nav-list li a:hover,
+.nav-list li a:hover {
+    color: #8CBDB9;
+}
+
 .fa-bars a:hover {
     color: #8CBDB9;
 }
@@ -284,6 +283,11 @@ cite {
     text-align: left;
 }
 
+.card:hover {
+    transform:scale(1.05);
+    box-shadow: 0 2px 40px #ccc;
+}
+
 .card-img {
         border-radius: 0;
         width: 100%;
@@ -313,14 +317,29 @@ cite {
     grid-area: sect2;
 }
 
+/* footer */
 
-
-footer {
+#footer_container {
     grid-area: footer;
-    margin: 30px auto;
-    padding: 30px auto;
+    margin: 20px auto;
+    width: 100%;
+    height: 200px;
+    border-top: 2px solid #223745;
 }
 
-footer a {
-    color: #fff;
+.contact {
+    display: inline-block;
+    margin: 30px auto;
+    padding: 30px auto;
+    justify-content: center;
+    background-color: #E8ECEB;
+}
+
+.contact a {
+    color: #223745;
+}
+
+.contact a:hover {
+    transform:scale(1.05);
+    box-shadow: 0 2px 40px #8CBDB9;
 }
