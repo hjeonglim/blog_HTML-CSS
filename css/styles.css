@@ -16,15 +16,16 @@ body {
     color: #fff;
     display: grid;
     grid-template-columns: 850px;
-    grid-template-rows: 25% 35% 60% 40% 20%;
+    grid-template-rows: auto;
     grid-gap: 30px;
     grid-template-areas:
         "header"
         "quotes"
         "main"
+        "subscribe"
         "sect"
         "footer";
-}
+    }
 
 a {
     text-decoration: none;
@@ -59,7 +60,7 @@ h1 {
 
 /* heading: title & logo */
 
-#heading {
+.heading {
     display: flex;
     flex-direction: row;
 }
@@ -69,15 +70,16 @@ h1 {
     font-size: 5.625rem;
     text-align: center;
     /* height: 9rem; */
-    margin: 10px auto;
+    margin: 20px auto;
     display: inline-block;
 }
 
-header img {
-    width: 5%;
+.logo {
     display: inline-block;
     text-align: left;
-    margin: 80px 80px 0 0;
+    margin: 20px 5px;
+    height: 7rem;
+    /* margin: 80px 80px 0 0; */
 
     /* margin-top: 50px; */
 }
@@ -260,6 +262,8 @@ cite {
     border: solid 2px #8CBDB9;
 }
 
+
+/* substories*/
 .card {
     display: inline-block;
     width: 100%;
@@ -307,6 +311,18 @@ cite {
     grid-area: sect2;
 }
 
+
+/*subscription*/
+
+.subscribe {
+    font-size: 7rem;
+    font-family: Montserrat, sans-serif;
+    background:
+    display: block;
+    grid-area: subscribe;
+}
+
+
 /* footer */
 
 #footer_container {
@@ -353,6 +369,7 @@ cite {
             "quotes quotes quotes"
             "main main main"
             "sect1 sect2 sect3"
+            "subscribe subscribe subscribe"
             "footer footer footer";
     }
     .nav-ul {
