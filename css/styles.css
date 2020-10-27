@@ -238,10 +238,11 @@ cite {
 }
 .btn {
     font-family: 'Lucida Sans', sans-serif;
-    color: #fff;
-    background-color: #8CBDB9;
-    border: solid 2px #8CBDB9;
-    padding: 20px 25px;
+    color: #E09E50;
+    font-weight: 900;
+    background-color: #fff;
+    border: solid 2px #E09E50;
+    padding: 15px 25px;
     margin-top: 25px;
     font-size: 1.2em;
     border-radius: 0.375rem;;
@@ -249,10 +250,10 @@ cite {
 }
 
 .btn:hover {
-    background-color: #fff;
-    color:#8CBDB9;
+    color:#fff;
     font-weight: 900;
-    border: solid 2px #8CBDB9;
+    background-color: #E09E50;
+    border: solid 2px #E09E50;
 }
 
 .card {
