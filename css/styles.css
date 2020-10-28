@@ -15,15 +15,6 @@ body {
     margin: auto;
     padding: 0 1.5rem;
     color: #fff;
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-gap: 30px;
-    grid-template-areas:
-        "header header header"
-        "quotes quotes quotes"
-        "main main main"
-        "sect1 sect2 sect3"
-        "footer footer footer";
 }
 
 a {
@@ -50,16 +41,12 @@ header {
     display: inline-block;
     vertical-align: middle;
     grid-area: header;
-}
-
-h1 {
-    color: #8CBDB9;
-    padding-bottom: 30px;
+    margin: 0;
 }
 
 /* heading: title & logo */
 
-#heading {
+.heading {
     display: flex;
     flex-direction: row;
 }
@@ -71,18 +58,12 @@ h1 {
     height: 9rem;
     margin: 10px auto;
     display: inline-block;
-}
-
-header img {
-    width: 5%;
-    display: inline-block;
-    text-align: left;
-    margin: 80px 80px 0 0;
+    color: #8CBDB9;
 }
 
 .nav-bar {
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
     background-color: #223745;
     justify-content: space-evenly;
     align-items: center;
@@ -121,7 +102,6 @@ header img {
 .nav-list li:first-child a:hover {
     color: #E8ECEB;
 }
-
 /* blockquotes */
 .quote_container {
     font-family: 'Special Elite', cursive;
@@ -201,26 +181,17 @@ cite {
     color: #223745;
 }
 
-#feature img {
+.main-img{
     width: 50%;
     margin-right: 50px;
     float: left;
     border-radius: 0.375rem;;
 }
+
 .category {
     padding-top: 1.5rem;
-}
-
-.card .category {
-    text-transform: uppercase;
-    font-size: bold;
-    font-weight: bold;
-    line-height: 1.5;
-    margin-bottom: 0.75rem;
-    border-bottom: 0.125rem;
-    padding-top: 15px;
-    padding-left: 20px;
-    color: #223745;
+    color: #8CBDB9;
+    text-transform: capitalize;
 }
 
 .title {
@@ -228,14 +199,15 @@ cite {
     font-size: 2rem;
     margin-top: 20px;
     line-height: 1.5;
+    color: #8CBDB9;
 }
 
 
 .featured_summary {
     line-height: 1.5em;
     font-family: 'Roboto', sans-serif;
-
 }
+
 .btn {
     font-family: 'Lucida Sans', sans-serif;
     color: #fff;
@@ -254,6 +226,16 @@ cite {
     font-weight: 900;
     background-color: #fff;
     border: solid 2px #E09E50;
+}
+
+/* Other stories */
+
+article {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-column-gap: 2%;
+    grid-template-areas:
+    "sect1 sect2 sect3"
 }
 
 .card {
@@ -283,25 +265,30 @@ cite {
         /* margin-top: 30px; */
         /* margin-bottom: 0; */
     }
+
 .card-title {
     text-align: left;
     color:#223745;
     font-weight: normal;
     padding: 20px;
     margin-bottom: 20px;
+    ont-family: 'Roboto', sans-serif;
 }
 
 
 .sub1 {
     grid-area: sect1;
+    display: inline-block;
 }
 
 .sub2 {
     grid-area: sect3;
+    display: inline-block;
 }
 
 .sub3 {
     grid-area: sect2;
+    display: inline-block;
 }
 
 /* footer */
@@ -341,38 +328,106 @@ cite {
 }
 
 /*tablet screen: 1110*/
-@media screen and (min-width: 600px) and (max-width:900px)
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    .logo,
-    .nav-bar {
-        display: none;
-    }
+@media screen and (min-width: 401px) and (max-width:900px){
 }
 
 /*smartphone screen: 480px or less*/
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:400px) {
+
+    .title-heading {
+        font-size: 3.5rem;
+    }
+
     .logo,
     .nav-bar {
         display: none;
     }
-    .long-pic {
-        float: none;
-        display: inline-block;
-        padding: 0;
+
+    .quote_container {
+        margin: 30px auto 30px;
     }
+
+    blockquote {
+        padding: 30px 10px;
+        width: 90%;
+        font-size: 8px;
+    }
+
+    blockquote:before,
+    blockquote:after {
+        display: none;
+    }
+
+    cite {
+        line-height: 2;
+        text-align: left;
+        font-style: bold;
+        padding: 30px auto 20px;
+        font-size: 20px;
+    }
+
+    #feature {
+        margin: 50px auto;
+        padding-bottom: 30px;
+        padding-right: 0;
+        display: block;
+        height: auto;
+    }
+
+    #feature h3 {
+        padding-left: 0px;
+    }
+    .main-content {
+        display: block;
+    }
+
+    .main-img {
+        display: block;
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+
+    .category{
+        text-align: left;
+        padding-top: 30px;
+        padding-left: 20px;
+        display: block;
+        }
+
+    .title {
+        padding-bottom: 20px;
+        font-size: 1.95rem;
+    }
+
+    .main-content {
+        display: inline-block;
+    }
+
+    article {
+        display: inline-block;
+    }
+
     .article-title2 span {
         display: block;
         padding:0;
     }
-    #feature, #sub-feature {
+
+    #feature,
+    #sub-feature {
         padding: 5px auto;
     }
+
     .float-article {
         margin-left: 0;
     }
+
+    .sub1,
+    .sub2,
+    .sub3 {
+        display: block;
+        margin-bottom: 20px;
     }
+
 }
