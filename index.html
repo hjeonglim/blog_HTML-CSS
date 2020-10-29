@@ -27,17 +27,17 @@
     <header>
         <!-- heading: title & logo -->
         <nav class="heading">
-            <img src="./css/images/logo.png" alt="BECOMING" class="logo">
-            <h1 class="title-heading">Hannah's Story</h1>
+            <img src="./css/images/logo.jpg" alt="BECOMING" class="logo">
+            <h1 class="title-heading">BECOMING</h1>
         </nav>
         <!-- navigation -->
         <nav class="nav-bar">
             <ul class="nav-list">
                 <li><a class="home" href="index.html">HOME</a></li>
                 <li><a href="blog.html">BLOG</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="subscribe.html">SUBSCRIBE</a></li>
+                <li><a href="#footer_container">CONTACT</a></li>
+                <li><a href="#about-section ">ABOUT</a></li>
+                <li><a href="#subscribe">SUBSCRIBE</a></li>
             </ul>
 
             <div>
@@ -50,7 +50,7 @@
     <!-- main stories-->
     <container class="quote_container">
         <blockquote class="quotes" cite="https://www.goalcast.com/2016/07/22/top-12-most-inspiring-steve-jobs-quotes/">
-            <p>Have the courage to follow your heart and intuition. They somehow already know what you truly want to <span class="org-become">become</span>. Everything else is secondary.</p>
+            <p>Have the courage to follow your heart and intuition. They somehow already know what you truly want to <span class="org-highlight">become</span>. Everything else is secondary.</p>
             <cite>- Steve Jobs</cite>
         </blockquote>
     </container>
@@ -100,14 +100,33 @@
             <a href="blog.html">
             <img src="./css/images/betterworld.jpg" class="card-img" alt="Better world" copyright="Phil Hearing on unSplash">
             <h3 class="category">MAKER</h3>
-            <h2 class="card-title">Make things that can help people live better</h2>
+            <h2 class="card-title">A programmer with humor</h2>
         </a>
             <!-- <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</p> -->
         </div>
     </article>
 
 
+    <!-- About section-->
+        <div id="about-section">
+            <img class="profile-pic" src="./css/images/hlim.png" alt="Hannah">
+            <h1 class="title">About Me</h1>
+            <p class="about-description">Hello! I'm Hannah. I am a mom and an ex-UN/Samsung researcher turned software engineer. I <span class="heart">♥</span> reading, writing, and making things with my boys.
+            </p>
+        </div>
 
+    <!-- subscription section-->
+        <form id="subscribe" action="action_page.php">
+            <div>
+                <h1 class="title">Subscribe to our newsletter: </h1>
+            </div>
+
+            <div class="container container1">
+                <input type="textbox" class="textbox" placeholder="First Name" name="name" required>
+                <input type="textbox" class="textbox" placeholder="Email Address" name="mail" required>
+                <input class="btn" type="submit" value="Subscribe">
+            </div>
+        </form>
     <!-- Footer -->
 
     <footer id="footer_container">
