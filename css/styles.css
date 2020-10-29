@@ -66,6 +66,7 @@ header {
     margin: 20px;
     border-radius: 15px;
 }
+
 .nav-bar {
     display: flex;
     flex-direction: row;
@@ -281,7 +282,7 @@ article {
     font-weight: normal;
     padding: 20px;
     margin-bottom: 20px;
-    ont-family: 'helvetica', sans-serif;
+    font-family: 'helvetica', sans-serif;
 }
 
 
@@ -427,7 +428,7 @@ form h1 {
 /*smartphone screen: 480px or less*/
 
 @media screen and (max-width:400px) {
-
+    /*heading*/
     .title-heading {
         font-size: 3.5rem;
     }
@@ -437,8 +438,9 @@ form h1 {
         display: none;
     }
 
+    /*quote*/
     .quote_container {
-        margin: 30px auto 30px;
+        margin: 30px auto 20px;
     }
 
     blockquote {
@@ -460,8 +462,9 @@ form h1 {
         font-size: 20px;
     }
 
+    /*articles*/
     #feature {
-        margin: 80px auto 50px;
+        margin: 60px auto 50px;
         padding-bottom: 30px;
         padding-right: 0;
         display: block;
@@ -501,6 +504,15 @@ form h1 {
         display: inline-block;
     }
 
+    .feature-main {
+        display: block;
+    }
+
+    .main-article-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     article {
         display: inline-block;
     }
@@ -526,5 +538,25 @@ form h1 {
         margin-bottom: 20px;
         width: 100%;
     }
+    /*subscribe*/
+    #subscribe {
+        margin-top: 50px;
+    }
+    .profile-pic {
+        float: none;
+        text-align: center;
+        width: 80%;
+        padding: 0 auto;
+    }
+    #about-section .title {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    form .btn,
+    .textbox {
+        display: block;
+        width: 100%;
+    }
+
 
 }
