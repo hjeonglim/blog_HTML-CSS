@@ -155,11 +155,30 @@ header {
 
 /* pictures */
 
-.article-img {
-    width: 40%;
+article figure {
+  margin: 0;
+  float: left;
+}
+
+
+figcaption {
+  color: #223745;
+  font-style: italic;
+  font-size: 18px;
+  padding: 10px 10px;
+  text-align: center;
+  background-color: #fff;
+  display: inline-block;
+  margin-top:0.35rem;
+  size: 50%
+}
+
+figure .article-img {
     border-radius: 0.375rem;
-    margin: 30px 30px 20px 10px;
-    float: left;
+    margin: 30px auto 0px auto;
+    display: block;
+    width: 50%;
+
 }
 
 .long-pic {
@@ -177,15 +196,15 @@ header {
 @media screen and (min-width: 600px) and (max-width:900px) {
 
     body {
-        width: 85%;
+        width: 80%;
     }
+
     header {
         display: inline-block;
     }
 
     .title-heading {
-        font-size: 20px;
-        margin: 3rem auto 3rem;
+        font: old 5.625rem 'Lucida Sans', sans-serif;
     }
 
     .home-btn {
@@ -197,10 +216,6 @@ header {
 
     #home-btn {
         margin: 2rem auto 1rem -30rem;
-    }
-
-    #feature {
-        margin-top: 3rem;
     }
 }
 
