@@ -186,16 +186,15 @@ header {
 
 article {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 2%;
-    grid-template-areas:
-    "sect1 sect2 sect3";
-    margin: 3rem auto;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 1em;
+    margin-bottom: 3rem;
 }
 
 .card {
     display: inline-block;
-    width: 100%;
+    width: 85%;
     height: 400px;
     margin: 0;
     background-color: #fff;
@@ -228,20 +227,4 @@ article {
     padding: 20px;
     margin-bottom: 20px;
     font-family: 'helvetica', sans-serif;
-}
-
-
-.sub1 {
-    grid-area: sect1;
-    display: inline-block;
-}
-
-.sub2 {
-    grid-area: sect3;
-    display: inline-block;
-}
-
-.sub3 {
-    grid-area: sect2;
-    display: inline-block;
 }

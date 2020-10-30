@@ -1,7 +1,14 @@
 
 /*tablet screen: 600px - 900px*/
 @media (min-width: 600px) and (max-width:900px){
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
+    nav.nav-bar {
+        width:100%;
+    }
     header .title-heading {
         font-size: 3.75rem;
         height: auto;
@@ -39,6 +46,12 @@
         font-size: 1.4rem;
     }
 
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        position:relative;
+        left: 45px;
+    }
     article .category {
         padding: 10px;
     }
@@ -94,18 +107,16 @@
     }
 
     /*articles*/
-    main #feature {
-        margin: 30px auto 50px;
+    main#feature {
+        margin: 0 auto 30px;
         display: block;
         height: auto;
         width: 100%;
+        padding: 0;
     }
 
     #feature h3 {
-        text-align: left;
-        display: block;
-        margin-top: 8rem;
-        padding-left: 0;
+        display: none;
     }
 
     .main-content {
@@ -115,11 +126,10 @@
     }
 
     .main-img {
-            width: 80%;
-            position: relative;
-            top: 0.5em;
-            left: 25%;
-            margin-top: 2rem;
+        float: none;
+        width: 100%;
+        position: relative;
+        left: 70px;
     }
 
     .category{
@@ -148,32 +158,6 @@
         width: 70%;
     }
 
-    article {
-        width: 100%;
-        margin: 7rem auto;
-        position: relative;
-        top: 7rem;
-        height: auto;
-    }
-
-    .article-title2 span {
-        display: block;
-        padding:0;
-    }
-
-    .sub1 {
-        display: block !important;
-        min-width: 270px;
-    }
-    .sub2 {
-        display: block !important;
-        min-width: 270px;
-    }
-
-    .sub3 {
-    display: block !important;
-    min-width: 270px;
-    }
 
     #feature,
     #sub-feature {
@@ -184,6 +168,18 @@
         margin-left: 0;
     }
 
+
+    /* card */
+
+    article {
+        position: relative;
+        top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .card {
+        width: 100%;
+    }
+
     /* about me*/
 
     .profile-pic {
@@ -191,6 +187,12 @@
         text-align: center;
         width: 80%;
         padding: 0 auto;
+    }
+
+    #about-section {
+        position: relative;
+        top: 2rem;
+        margin-bottom: 3rem;
     }
 
     #about-section .title {
@@ -204,7 +206,7 @@
 
     /*subscribe*/
     #subscribe {
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
 
 
