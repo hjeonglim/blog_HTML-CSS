@@ -1,0 +1,210 @@
+
+/*tablet screen: 600px - 900px*/
+@media (min-width: 600px) and (max-width:900px){
+
+    .title-heading {
+        font-size: 3.5rem;
+        height: auto;
+        margin: 3rem auto;
+    }
+
+    .nav-list li {
+        display: inline-block;
+        color: #E8ECEB;
+        font-weight: 900;
+        margin-right: 20px;
+        font-size: 1rem;
+        padding: 1rem 0.1rem;
+    }
+
+    .quote_container {
+        height: 450px;
+    }
+
+    .card-title {
+        text-align: left;
+        color:#223745;
+        font-weight: normal;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-family: 'helvetica', sans-serif;
+    }
+
+    article .category {
+        padding: 10px;
+    }
+
+    article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .profile-pic {
+        float: none;
+        width: 70%;
+        padding: 0 auto;
+    }
+
+    #about-section .title {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .about-description {
+        padding: 10px 20px;
+        margin-bottom: 2rem;
+    }
+
+}
+/*smartphone screen: 320px or less*/
+
+@media (max-width:320px) {
+
+    /*heading*/
+    body {
+        text-align: center;
+
+    }
+
+    header .nav-bar,
+    .logo {
+        display: none;
+    }
+
+    .heading {
+
+    }
+
+    header .title-heading {
+        font-size: 2.5rem;
+        height: auto;
+        margin: 2rem auto;
+        position: relative;
+        left: -15px;
+    }
+
+    /*quote*/
+    .quote_container {
+        display: none;
+    }
+
+    /*articles*/
+    main #feature {
+        margin: 30px auto 50px;
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    #feature h3 {
+        text-align: left;
+        display: block;
+        margin-top: 8rem;
+        padding-left: 0;
+    }
+
+    .main-content {
+        display: block;
+        line-height: normal;
+        font-size: 1.3rem;
+    }
+
+    .main-img {
+            width: 80%;
+            position: relative;
+            top: 0.5em;
+            left: 25%;
+            margin-top: 2rem;
+    }
+
+    .category{
+        text-align: left;
+        padding-top: 20px;
+        display: block;
+        }
+
+    .title {
+        padding-bottom: 10px;
+        font-size: 1.95rem;
+        line-height: 1;
+    }
+
+    .main-content {
+        display: inline-block;
+    }
+
+    .feature-main {
+        display: block;
+    }
+
+    .btn {
+        margin-left: 0;
+        margin-right: 0;
+        width: 70%;
+    }
+
+    article {
+        width: 100%;
+        margin: 7rem auto;
+        position: relative;
+        top: 7rem;
+        height: auto;
+    }
+
+    .article-title2 span {
+        display: block;
+        padding:0;
+    }
+
+    .sub1 {
+        display: block !important;
+        min-width: 270px;
+    }
+    .sub2 {
+        display: block !important;
+        min-width: 270px;
+    }
+
+    .sub3 {
+    display: block !important;
+    min-width: 270px;
+    }
+
+    #feature,
+    #sub-feature {
+        padding: 5px auto;
+    }
+
+    .float-article {
+        margin-left: 0;
+    }
+
+    /* about me*/
+
+    .profile-pic {
+        float: none;
+        text-align: center;
+        width: 80%;
+        padding: 0 auto;
+    }
+
+    #about-section .title {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .about-description {
+        padding: 10px 20px;
+    }
+
+    /*subscribe*/
+    #subscribe {
+        margin-top: 3rem;
+    }
+
+
+    form .btn,
+    .textbox {
+        display: block;
+        width: 100%;
+    }
+}
