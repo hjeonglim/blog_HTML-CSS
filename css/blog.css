@@ -1,5 +1,6 @@
 @import url(footer.css);
 @import url(about_me.css);
+@import url(blog_mediaqueries.css)
 
 * {
     margin: 0;
@@ -15,12 +16,11 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 0 1rem;
     line-height: 1.5;
     color: #fff;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 8% auto 15% 10%;
+    grid-template-rows: 4% auto 15% 10%;
     grid-template-areas:
         "header"
         "main"
@@ -47,14 +47,12 @@ p {
 /*header*/
 /*header*/
 header {
-    width: 100%;
-    position: static;
     top: 0;
     left: 0;
     display: inline-block;
     vertical-align: middle;
     grid-area: header;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 /* heading: title & logo */
@@ -64,7 +62,7 @@ header {
 }
 
 .title-heading {
-    font: bold 5.625rem 'Lucida Sans', sans-serif;
+    font: bold 3.5rem 'Lucida Sans', sans-serif;
     color: #223745;
     align-items: center;
     margin: 3rem auto;
@@ -157,11 +155,6 @@ header {
 
 /* pictures */
 
-article figure {
-  margin: 0;
-  float: left;
-}
-
 
 figcaption {
   color: #223745;
@@ -172,115 +165,18 @@ figcaption {
   background-color: #fff;
   display: inline-block;
   margin-top:0.35rem;
-  size: 50%
+  size: 50%;
 }
 
-figure .article-img {
+img.article-img {
     border-radius: 0.375rem;
-    margin: 30px auto 0px auto;
-    display: block;
-    width: 50%;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+
 
 }
 
 .long-pic {
     max-height: 20rem;
-}
-
-.float-article {
-    position: relative;
-    padding-top: 20px;
-    line-height: 1.5;
-}
-
-
-/*tablet screen*/
-@media screen and (min-width: 600px) and (max-width:900px) {
-
-    body {
-        width: 80%;
-    }
-
-    header {
-        display: inline-block;
-    }
-
-    .title-heading {
-        font: old 5.625rem 'Lucida Sans', sans-serif;
-    }
-
-    .home-btn {
-        padding:15px;
-        text-align: left;
-        font: 1em;
-        margin-bottom: 0;
-    }
-
-    #home-btn {
-        margin: 2rem auto 1rem -30rem;
-    }
-}
-
-/*smartphone screen: 320px or less*/
-
-@media screen and (max-width:320px) {
-    * {
-        padding: 0;
-        margin: 0;
-    }
-    body {
-        padding: 0;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 3% auto 10%;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-    }
-
-    /*heading*/
-    header {
-        display: flex;
-        margin-bottom: 0;
-        vertical-align: middle;
-        align-items: center;
-    }
-    .heading {
-        vertical-align: middle;
-        margin-left: 30px;
-    }
-
-
-    .title-heading {
-        top: 2rem;
-        font-size: 2rem;
-        margin-left: 0;
-    }
-
-    .article-img {
-        float: none;
-        display: inline-block;
-
-    }
-
-    .article-title2 span {
-        display: inline-block;
-        padding:0;
-    }
-
-    #feature {
-        padding: 0 2rem;
-
-    }
-
-    .container {
-        margin-top: 0;
-
-    }
-
-    .float-article {
-        margin-left: 0;
-    }
 }
